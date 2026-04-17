@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Makeup Booking</title>
+</head>
+<body>
+    <header>
+         <nav> 
+             <a href="index.html">Home</a> | 
+            <a href="login.html">Log in</a> |
+             <a href="about.html">About</a> | 
+             <a href="products.html">Products</a> |
+              <a href="booking.html">Booking</a> |
+              <a href="cart.html">Cart</a> |
+              <a href="wishlist.html">wishlist</a> |
+              <a href="checkout.html"> Checkout</a>|
+              <a href="FAQ.html">FAQ</a>|
+              <a href="contact.html">Contact</a> |
+             <a href="feedback.html">Feedback </a> 
+
+        </nav> 
+    </header>
+
+    <h1>Book Your Makeup Appointment </h1> 
+    <img src="wmd pictures/Getting glam💅🏾.jpeg" alt="">
+    <p>Please fill in the form below to secure your booking.</p>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="service">Makeup Service:</label><br>
+        <select id="service" name="service">
+            <option value="bridal">Bridal Makeup</option>
+            <option value="birthday">Birthday Makeup</option>
+            <option value="photoshoot">Photoshoot Makeup</option>
+            <option value="natural">Natural Glam</option>
+            <option value="full-glam">Full Glam</option>
+        </select><br><br>
+
+        <label for="date">Preferred Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Preferred Time:</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+
+        
+        <label for="location">Appointment Type:</label><br>
+        <input type="radio" name="location" value="studio" required> In-Studio<br>
+        <input type="radio" name="location" value="mobile"> Mobile Service<br><br>
+
+        
+        <label for="address">Address (if mobile service):</label><br>
+        <input type="text" id="address" name="address"><br><br>
+
+        
+        <label for="notes">Additional Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="30"></textarea><br><br>
+
+        
+        <input type="submit" value="Book Appointment">
+
+    </form>
+
+    <p>We will contact you to confirm your booking.</p>
+
+</body>
+</html>
+    
