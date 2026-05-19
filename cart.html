@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <link rel="stylesheet" href="style.css">
-    <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Cart</title>
 </head>
 <body>
 
-<h1>Your Cart</h1>
-
- <nav> 
-
-           <a href="index.html">Home</a> | 
-            <a href="login.html">Log in</a> |
-             <a href="about.html">About</a> | 
-             <a href="products.html">Products</a> |
-              <a href="booking.html">Booking</a> |
-              <a href="cart.html">Cart</a> |
-              <a href="wishlist.html">wishlist</a> |
-              <a href="checkout.html"> Checkout</a>|
-              <a href="FAQ.html">FAQ</a>|
-              <a href="contact.html">Contact</a> |
-             <a href="feedback.html">Feedback </a>
-        </nav> 
-       
+<header>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="login.html">Log in</a> |
+    <a href="about.html">About</a> |
+    <a href="products.html">Products</a> |
+    <a href="booking.html">Booking</a> |
+    <a href="cart.html">Cart</a> |
+    <a href="wishlist.html">Wishlist</a> |
+    <a href="checkout.html">Checkout</a> |
+    <a href="FAQ.html">FAQ</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="feedback.html">Feedback</a>
+  </nav>
 </header>
 
 <main>
+  <section>
+    <h1>Your Cart</h1>
+    <h2>Items in Your Cart</h2>
 
-    <section>
-        <h2>Items in Your Cart</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- items load here -->
+      </tbody>
+    </table>
 
-        <a href="checkout.html">Proceed to Checkout</a>
-    </section>
+    <p>Total: <span id="cart-total"></span></p>
 
+    <a href="index.html" class="btn btn-outline">Continue Shopping</a>
+    <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+  </section>
 </main>
 
 <footer>
-    <p>&copy; 2026 Tee's Cosmetics Corner</p>
+  <p>&copy; 2026 Tee's Cosmetics Corner</p>
 </footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const product = params.get('product');
+  const price = params.get('price');
+
+  if (product && price) {
+    document.getElementById('cart-body').innerHTML = `
+      <tr>
+        <td>${product}</td>
+        <td>P${price}.00</td>
+        <td>1</td>
+        <td>P${price}.00</td>
+      </tr>
+    `;
+    document.getElementById('cart-total').textContent = 'P' + price + '.00';
+  } else {
+    document.getElementById('cart-body').innerHTML = `
+      <tr>
+        <td colspan="4">Your cart is empty.</td>
+      </tr>
+    `;
+    document.getElementById('cart-total').textContent = 'P0.00';
+  }
+</script>
 
 </body>
 </html>
