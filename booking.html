@@ -1,82 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Makeup Booking</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Booking – Tee's Cosmetics Corner</title>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <header>
-         <nav> 
-             <a href="index.html">Home</a> | 
-            <a href="login.html">Log in</a> |
-             <a href="about.html">About</a> | 
-             <a href="products.html">Products</a> |
-              <a href="booking.html">Booking</a> |
-              <a href="cart.html">Cart</a> |
-              <a href="wishlist.html">wishlist</a> |
-              <a href="checkout.html"> Checkout</a>|
-              <a href="FAQ.html">FAQ</a>|
-              <a href="contact.html">Contact</a> |
-             <a href="feedback.html">Feedback </a> 
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Tee's <span>Cosmetics</span> Corner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        </nav> 
-    </header>
+  <main>
 
-    <h1>Book Your Makeup Appointment </h1> 
-    <img src="wmd pictures/Getting glam💅🏾.jpeg" alt="">
-    <p>Please fill in the form below to secure your booking.</p>
+    
+    <section class="booking text-center">
+      <h1>Book Your Makeup Appointment</h1>
+      <p>Fill in the form below and we will contact you to confirm your booking.</p>
+    </section>
 
-    <form action="#" method="post">
 
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <section class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="product-card p-4">
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <h2 class="mb-4">Appointment Details</h2>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
+            <form action="#" method="post">
 
-        <label for="service">Makeup Service:</label><br>
-        <select id="service" name="service">
-            <option value="bridal">Bridal Makeup</option>
-            <option value="birthday">Birthday Makeup</option>
-            <option value="photoshoot">Photoshoot Makeup</option>
-            <option value="natural">Natural Glam</option>
-            <option value="full-glam">Full Glam</option>
-        </select><br><br>
+              <div class="mb-3">
+                <label class="form-label">Full Name:</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+              </div>
 
-        <label for="date">Preferred Date:</label><br>
-        <input type="date" id="date" name="date" required><br><br>
+              <div class="mb-3">
+                <label class="form-label">Email Address:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+              </div>
 
-        <label for="time">Preferred Time:</label><br>
-        <input type="time" id="time" name="time" required><br><br>
+              <div class="mb-3">
+                <label class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Makeup Service:</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="bridal">Bridal Makeup</option>
+                  <option value="birthday">Birthday Makeup</option>
+                  <option value="photoshoot">Photoshoot Makeup</option>
+                  <option value="natural">Natural Glam</option>
+                  <option value="full-glam">Full Glam</option>
+                </select>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label">Preferred Date:</label>
+                  <input type="date" id="date" name="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Preferred Time:</label>
+                  <input type="time" id="time" name="time" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Appointment Type:</label>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="location" value="studio" id="studio" required>
+                    <label class="form-check-label" for="studio">In-Studio</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="location" value="mobile" id="mobile">
+                    <label class="form-check-label" for="mobile">Mobile Service</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Address (if mobile service):</label>
+                <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address">
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4" class="form-control" placeholder="Any special requests or notes..."></textarea>
+              </div>
+
+              <input type="submit" value="Book Appointment" class="btn btn-primary w-100">
+
+            </form>
+          </div>
+        </div>
 
         
-        <label for="location">Appointment Type:</label><br>
-        <input type="radio" name="location" value="studio" required> In-Studio<br>
-        <input type="radio" name="location" value="mobile"> Mobile Service<br><br>
+        <div class="col-md-3">
+          <div class="product-card p-4 mb-4">
+            <h5>💄 Our Services</h5>
+            <ul class="mt-3">
+              <li>Bridal Makeup</li>
+              <li>Birthday Makeup</li>
+              <li>Photoshoot Makeup</li>
+              <li>Natural Glam</li>
+              <li>Full Glam</li>
+            </ul>
+          </div>
+          <div class="product-card p-4 mb-4">
+            <h5>📍 Location</h5>
+            <p class="mt-3">Gaborone, Botswana</p>
+            <h5>📞 Contact</h5>
+            <p>71984567</p>
+          </div>
+          <div class="product-card p-4">
+            <h5>🕐 Hours</h5>
+            <p class="mt-3">Mon – Fri: 8am – 6pm<br>Saturday: 9am – 4pm<br>Sunday: Closed</p>
+          </div>
+        </div>
 
-        
-        <label for="address">Address (if mobile service):</label><br>
-        <input type="text" id="address" name="address"><br><br>
+      </div>
+    </section>
 
-        
-        <label for="notes">Additional Notes:</label><br>
-        <textarea id="notes" name="notes" rows="4" cols="30"></textarea><br><br>
+  </main>
 
-        
-        <input type="submit" value="Book Appointment">
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand">Tee's <span>Cosmetics</span> Corner</h3>
+          <p>Your one-stop shop for wigs, skincare, makeup and beauty accessories. Glamour delivered.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="booking.html">Book a Session</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Tee's Cosmetics Corner. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
-    </form>
-
-    <p>We will contact you to confirm your booking.</p>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
     
