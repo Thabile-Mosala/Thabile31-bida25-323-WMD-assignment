@@ -1,127 +1,138 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Tee's Cosmetics Corner</title>
+</head>
+<body>
 
-<html lang="en"> 
 
-<head> 
-
-    <meta charset="UTF-8"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-    <a href="Tee's Cometics Corner".png>  <title>Tee's Cosmetics Corner</title>
-    
-</head> 
-
-<body> 
-        <h1>Tee's Cosmetics Corner</h1> 
-         <nav> 
-             <a href="index.html">Home</a> | 
-            <a href="login.html">Log in</a> |
-             <a href="about.html">About</a> | 
-             <a href="products.html">Products</a> |
-              <a href="booking.html">Booking</a> |
-              <a href="cart.html">Cart</a> |
-              <a href="wishlist.html">wishlist</a> |
-              <a href="checkout.html"> Checkout</a>|
-              <a href="FAQ.html">FAQ</a>|
-              <a href="contact.html">Contact</a> |
-             <a href="feedback.html">Feedback </a> 
-        </nav> 
-<hr>
-        <h2>Welcome</h2>
-        <p>
-            Welcome to Tee's Cosmetics Corner, your one-step shop for wigs, skincare, makeup and beauty accessories.
-        </p>
-
-        <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Screenshot%202026-04-16%20203424.png" alt="">
-
-        <hr>
-
-        <h2>Categories</h2>
-        <ul>
-            <li>Wigs</li>
-            <li>Skincare</li>
-            <li>Makeup</li>
-            <li>Accessories</li>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Tee's <span>Cosmetics</span> Corner</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+          <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+          <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
         </ul>
-<hr>
-        <h2>Featured Products</h2>
+      </div>
+    </div>
+  </nav>
 
-<div class="products__grid">
+  <main>
 
-  <div class="product-card">
-    <div class="product-card__image">
-      <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(15).jpeg" alt="Brown Angel">
-    </div>
-    <div class="product-card__body">
-      <p class="product-card__name"><a href="Brown Angel.html">Brown Angel</a></p>
-      <p class="product-card__price">P650.00</p>
-      <a href="cart.html?product=Brown Angel&price=650" class="product-card__add">Add To Cart</a>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-card__image">
-      <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/12%20Pcs%20WIG%20INSTALLATION%20KIT%20FOR%20BEGINNERS.jpeg" alt="Wig Installation Kit">
-    </div>
-    <div class="product-card__body">
-      <p class="product-card__name"><a href="Wig Installation Kit.html">Wig Installation Kit</a></p>
-      <p class="product-card__price">P1340.00</p>
-      <a href="cart.html?product=Wig Installation Kit&price=1340" class="product-card__add">Add To Cart</a>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-card__image">
-      <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/10%20Holy-Grail%20Skincare%20Products%20to%20Enhance%20Your%20Routine%202024.jpeg" alt="Holy Grail Skincare Hamper">
-    </div>
-    <div class="product-card__body">
-      <p class="product-card__name"><a href="Holy-grail skincare Hamper.html">Holy Grail Skincare Hamper</a></p>
-      <p class="product-card__price">P1800.00</p>
-      <a href="cart.html?product=Holy Grail Skincare Hamper&price=1800" class="product-card__add">Add To Cart</a>
-    </div>
-  </div>
-
-</div>
-            
-        <hr>
-     <div class="marquee">
-    <div class="marquee__track">
-      <span class="marquee__item">Free shipping over P500</span>
-      <span class="marquee__item">Wig Installation Kits</span>
-      <span class="marquee__item">Professional Makeup Sessions</span>
-      <span class="marquee__item">Skincare Hampers</span>
-      <span class="marquee__item">New Arrivals Every Week</span>
-      <span class="marquee__item">Cruelty-Free Products</span>
-      <span class="marquee__item">Free shipping over P500</span>
-      <span class="marquee__item">Wig Installation Kits</span>
-      <span class="marquee__item">Professional Makeup Sessions</span>
-      <span class="marquee__item">Skincare Hampers</span>
-      <span class="marquee__item">New Arrivals Every Week</span>
-      <span class="marquee__item">Cruelty-Free Products</span>
-    </div>
-  </div>
+    <section class="container my-5">
+      <h2>Welcome</h2>
+      <p>Welcome to Tee's Cosmetics Corner, your one-stop shop for wigs, skincare, makeup and beauty accessories.</p>
+      <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Screenshot%202026-04-16%20203424.png" alt="Tee's Cosmetics Corner" class="img-fluid rounded mt-3">
+    </section>
 
     <hr>
 
-        <h2>Book a Makeup Session </h2>
-        <p>Come get your glam done professionally By us</p>
-
-        <a href="booking.html">Book Now</a>
-        <main>
-
-        </main>
     
-    <footer>
+    <section class="container my-5">
+      <h2>Categories</h2>
+      <ul>
+        <li>Wigs</li>
+        <li>Skincare</li>
+        <li>Makeup</li>
+        <li>Accessories</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section class="container my-5">
+      <h2>Featured Products</h2>
+      <div class="products__grid mt-4">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(15).jpeg" alt="Brown Angel">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Brown Angel.html">Brown Angel</a></p>
+            <p class="product-card__price">P650.00</p>
+            <a href="cart.html?product=Brown Angel&price=650" class="product-card__add">Add To Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/12%20Pcs%20WIG%20INSTALLATION%20KIT%20FOR%20BEGINNERS.jpeg" alt="Wig Installation Kit">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Wig Installation Kit.html">Wig Installation Kit</a></p>
+            <p class="product-card__price">P1340.00</p>
+            <a href="cart.html?product=Wig Installation Kit&price=1340" class="product-card__add">Add To Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/10%20Holy-Grail%20Skincare%20Products%20to%20Enhance%20Your%20Routine%202024.jpeg" alt="Holy Grail Skincare Hamper">
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Holy-grail skincare Hamper.html">Holy Grail Skincare Hamper</a></p>
+            <p class="product-card__price">P1800.00</p>
+            <a href="cart.html?product=Holy Grail Skincare Hamper&price=1800" class="product-card__add">Add To Cart</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class="marquee">
+      <div class="marquee__track">
+        <span class="marquee__item">Free shipping over P500</span>
+        <span class="marquee__item">Wig Installation Kits</span>
+        <span class="marquee__item">Professional Makeup Sessions</span>
+        <span class="marquee__item">Skincare Hampers</span>
+        <span class="marquee__item">New Arrivals Every Week</span>
+        <span class="marquee__item">Cruelty-Free Products</span>
+        <span class="marquee__item">Free shipping over P500</span>
+        <span class="marquee__item">Wig Installation Kits</span>
+        <span class="marquee__item">Professional Makeup Sessions</span>
+        <span class="marquee__item">Skincare Hampers</span>
+        <span class="marquee__item">New Arrivals Every Week</span>
+        <span class="marquee__item">Cruelty-Free Products</span>
+      </div>
+    </div>
+
+    <section class="booking container my-5 text-center">
+      <h2>Book a Makeup Session</h2>
+      <p>Come get your glam done professionally by us</p>
+      <a href="booking.html" class="btn btn-primary">Book Now</a>
+    </section>
+
+  </main>
+
+
+  <footer>
     <div class="container">
-      <div class="footer-grid">
- 
+      <div class="footer__grid">
+
         <div>
-          <div class="footer-brand">Tee's Cosmetics Corner</div>
+          <h3 class="footer__brand">Tee's <span>Cosmetics</span> Corner</h3>
           <p>Your one-stop shop for wigs, skincare, makeup and beauty accessories. Glamour delivered.</p>
         </div>
- 
+
         <div>
           <h4>Quick Links</h4>
           <ul>
@@ -132,7 +143,7 @@
             <li><a href="FAQ.html">FAQ</a></li>
           </ul>
         </div>
- 
+
         <div>
           <h4>My Account</h4>
           <ul>
@@ -144,16 +155,14 @@
             <li><a href="feedback.html">Feedback</a></li>
           </ul>
         </div>
- 
-      </div>
 
-        <div class="footer-bottom">
+      </div>
+      <div class="footer__bottom">
         &copy; 2026 Tee's Cosmetics Corner. All rights reserved.
       </div>
     </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body> 
-</html> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
