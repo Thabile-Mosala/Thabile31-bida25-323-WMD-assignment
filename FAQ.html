@@ -1,38 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>FAQ</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>FAQ – Tee's Cosmetics Corner</title>
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-<h1>Frequently Asked Questions</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Tee's <span>Cosmetics</span> Corner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+            <li class="nav-item"><a class="nav-link active" href="FAQ.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-<nav>
-    <a href="index.html">Home</a> | 
-            <a href="login.html">Log in</a> |
-             <a href="about.html">About</a> | 
-             <a href="products.html">Products</a> |
-              <a href="booking.html">Booking</a> |
-              <a href="cart.html">Cart</a> |
-              <a href="wishlist.html">wishlist</a> |
-              <a href="checkout.html"> Checkout</a>|
-              <a href="FAQ.html">FAQ</a>|
-              <a href="contact.html">Contact</a> |
-             <a href="feedback.html">Feedback </a>
-</nav>
+  <main>
 
-<h3>How long does delivery take?</h3>
-<p>2-5 working days.</p>
+    
+    <section class="booking text-center">
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about Tee's Cosmetics Corner.</p>
+    </section>
 
-<h3>Do you accept returns?</h3>
-<p>Yes, within 7 days.</p>
+    
+    <section class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
 
-<h3>Do you offer makeup services?</h3>
-<p>Yes, book through our booking page.</p>
+          
+          <h4 class="mb-3" style="color: var(--gold);">✦ Orders & Delivery</h4>
+          <div class="faq__list mb-5">
 
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                How long does delivery take?
+              </button>
+              <div class="faq__answer">
+                Delivery takes 2–5 working days depending on your location within Botswana. You will receive a confirmation once your order has been dispatched.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                How much does shipping cost?
+              </button>
+              <div class="faq__answer">
+                We offer free shipping on all orders over P500. Orders below P500 have a standard delivery fee.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                Can I track my order?
+              </button>
+              <div class="faq__answer">
+                Yes! Once your order is dispatched you will receive tracking details via email. You can also contact us directly for updates.
+              </div>
+            </div>
+
+          </div>
+
+
+          <h4 class="mb-3" style="color: var(--gold);">✦ Returns & Refunds</h4>
+          <div class="faq__list mb-5">
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                Do you accept returns?
+              </button>
+              <div class="faq__answer">
+                Yes, we accept returns within 7 days of receiving your order. Items must be unused and in their original packaging. Please contact us at thabilemosala12@gmail.com to initiate a return.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                How do I get a refund?
+              </button>
+              <div class="faq__answer">
+                Once we receive and inspect your returned item, your refund will be processed within 5–7 working days back to your original payment method.
+              </div>
+            </div>
+
+          </div>
+
+        
+          <h4 class="mb-3" style="color: var(--gold);">✦ Products</h4>
+          <div class="faq__list mb-5">
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                Are your products cruelty-free?
+              </button>
+              <div class="faq__answer">
+                Yes! All of our products are cruelty-free and ethically sourced. We are committed to beauty that doesn't harm animals.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                Do you sell human hair wigs?
+              </button>
+              <div class="faq__answer">
+                Yes, we stock both human hair and high-quality synthetic wigs. Product descriptions on each wig page will specify the hair type.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                Can you help me choose the right skincare products?
+              </button>
+              <div class="faq__answer">
+                Absolutely! Visit our <a href="contact.html">Contact page</a> and our team will assist you in finding the right products for your skin type.
+              </div>
+            </div>
+
+          </div>
+
+          
+          <h4 class="mb-3" style="color: var(--gold);">✦ Makeup Services</h4>
+          <div class="faq__list mb-5">
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                Do you offer makeup services?
+              </button>
+              <div class="faq__answer">
+                Yes! We offer professional makeup services including Bridal, Birthday, Photoshoot, Natural Glam and Full Glam. Book through our <a href="booking.html">Booking page</a>.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                Do you offer mobile makeup services?
+              </button>
+              <div class="faq__answer">
+                Yes, we offer both in-studio and mobile makeup services. Select your preference when filling in the booking form.
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__question" onclick="toggleFaq(this)">
+                How do I book a makeup appointment?
+              </button>
+              <div class="faq__answer">
+                Visit our <a href="booking.html">Booking page</a>, fill in your details and preferred date and time, and we will contact you to confirm your appointment.
+              </div>
+            </div>
+
+          </div>
+
+          
+          <div class="product-card p-4 text-center mt-4">
+            <h4>Still have questions?</h4>
+            <p class="mt-2">Our team is happy to help. Reach out to us directly.</p>
+            <a href="contact.html" class="btn btn-primary mt-2">Contact Us</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand">Tee's <span>Cosmetics</span> Corner</h3>
+          <p>Your one-stop shop for wigs, skincare, makeup and beauty accessories. Glamour delivered.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="booking.html">Book a Session</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Tee's Cosmetics Corner. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      item.classList.toggle('open');
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
