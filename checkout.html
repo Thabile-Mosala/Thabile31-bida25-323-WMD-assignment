@@ -59,9 +59,15 @@
       <input type="submit" value="Place Order" class="btn btn-primary">
     </form>
     
-    <script>
-function placeOrder() {
-  alert("🎉 Your order has been placed successfully!");
+     <div id="orderMessage" style="display:none; color:green; font-weight:bold; margin-top:20px;">
+  🎉 Your order has been placed successfully!
+</div>
+
+<script>
+function placeOrder(event) {
+  event.preventDefault(); // stops page refresh
+
+  document.getElementById("orderMessage").style.display = "block";
 }
 </script>
   </main>
