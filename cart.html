@@ -1,97 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Cart</title>
+  <title>Cart – Tee's Cosmetics Corner</title>
 </head>
 <body>
 
-<header>
-     
-  <nav class="navbar navbar-expand-lg">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Tee's <span>Cosmetics</span> Corner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link active" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    
+    <section class="booking text-center">
+      <h1>Your Cart</h1>
+      <p>Review your items and proceed to checkout when ready.</p>
+    </section>
+
+    <section class="container my-5">
+      <div class="row g-5">
+
+        
+        <div class="col-md-8">
+          <div class="product-card p-4">
+            <h2 class="mb-4">Items in Your Cart</h2>
+
+            
+            <div id="empty-cart" class="text-center py-5" style="display:none;">
+              <div style="font-size:3rem;"></div>
+              <h4 class="mt-3">Your cart is empty</h4>
+              <p>Browse our products and click Add to Cart to get started.</p>
+              <a href="products.html" class="btn btn-primary mt-2">Browse Products</a>
+            </div>
+
+            
+            <div id="cart-content">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="cart-body"></tbody>
+              </table>
+
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <a href="products.html" class="btn btn-outline">Continue Shopping</a>
+                <button onclick="clearCart()" class="btn btn-outline" style="border-color:#e8394d; color:#e8394d;">Clear Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="product-card p-4">
+            <h3 class="mb-4">Order Summary</h3>
+
+            <div class="d-flex justify-content-between mb-2">
+              <span>Items (<span id="item-count">0</span>)</span>
+              <span id="subtotal">P0.00</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Shipping</span>
+              <span id="shipping-cost">P0.00</span>
+            </div>
+            <p id="shipping-note" style="font-size:0.78rem; color:var(--text-muted);"></p>
+            <hr>
+            <div class="d-flex justify-content-between mb-4">
+              <strong>Total</strong>
+              <strong id="cart-total">P0.00</strong>
+            </div>
+
+            <a href="checkout.html" class="btn btn-primary w-100" id="checkout-btn">Proceed to Checkout</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
     <div class="container">
-      <a class="navbar-brand" href="index.html">Tee's <span>Cosmetics</span> Corner</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-          <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
-          <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
-          <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-        </ul>
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand">Tee's <span>Cosmetics</span> Corner</h3>
+          <p>Your one-stop shop for wigs, skincare, makeup and beauty accessories. Glamour delivered.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="booking.html">Book a Session</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+       <p>Follow us:</p>
+
+  <a href="https://facebook.com" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://instagram.com" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://twitter.com" target="_blank">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <a href="https://tiktok.com" target="_blank">
+    <i class="fab fa-tiktok"></i>
+  </a>
+      <div class="footer__bottom">
+        &copy; 2026 Tee's Cosmetics Corner. All rights reserved.
       </div>
     </div>
-  </nav>
+  </footer>
 
-</header>
+  <script>
+    // Load cart from localStorage or start fresh
+    let cart = JSON.parse(localStorage.getItem('tcc-cart') || '[]');
 
-<main>
-  <section>
-    <h1>Your Cart</h1>
-    <h2>Items in Your Cart</h2>
-    
-    <table>
-      <thead>
+    // If a product was added via URL, add it to cart
+    const params = new URLSearchParams(window.location.search);
+    const newProduct = params.get('product');
+    const newPrice = parseFloat(params.get('price')) || 0;
+
+    if (newProduct) {
+      // Check if product already in cart
+      const existing = cart.find(item => item.name === newProduct);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ name: newProduct, price: newPrice, qty: 1 });
+      }
+      localStorage.setItem('tcc-cart', JSON.stringify(cart));
+      // Remove URL params so refreshing doesn't keep adding
+      window.history.replaceState({}, '', 'cart.html');
+    }
+
+    function renderCart() {
+      const tbody = document.getElementById('cart-body');
+      const emptyCart = document.getElementById('empty-cart');
+      const cartContent = document.getElementById('cart-content');
+
+      if (cart.length === 0) {
+        emptyCart.style.display = 'block';
+        cartContent.style.display = 'none';
+        document.getElementById('item-count').textContent = '0';
+        document.getElementById('subtotal').textContent = 'P0.00';
+        document.getElementById('cart-total').textContent = 'P0.00';
+        document.getElementById('shipping-cost').textContent = 'P0.00';
+        document.getElementById('shipping-note').textContent = '';
+        return;
+      }
+
+      emptyCart.style.display = 'none';
+      cartContent.style.display = 'block';
+
+      // Build table rows
+      tbody.innerHTML = cart.map((item, index) => `
         <tr>
-          <th>Product</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
+          <td>${item.name}</td>
+          <td>P${item.price.toFixed(2)}</td>
+          <td>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <button onclick="changeQty(${index}, -1)" class="btn btn-outline" style="padding:0.2rem 0.6rem; font-size:0.8rem;">−</button>
+              <span>${item.qty}</span>
+              <button onclick="changeQty(${index}, 1)" class="btn btn-outline" style="padding:0.2rem 0.6rem; font-size:0.8rem;">+</button>
+            </div>
+          </td>
+          <td>P${(item.price * item.qty).toFixed(2)}</td>
+          <td>
+            <button onclick="removeItem(${index})" style="background:none; border:none; color:#e8394d; font-size:1.1rem; cursor:pointer;">✕</button>
+          </td>
         </tr>
-      </thead>
-      <tbody id="cart-body">
-        
-      </tbody>
-    </table>
+      `).join('');
 
-    <p>Total: <span id="cart-total"></span></p>
+      // Calculate totals
+      const subtotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+      const shipping = subtotal >= 500 ? 0 : 50;
+      const total = subtotal + shipping;
 
-    <a href="products.html" class="btn btn-outline">Continue Shopping</a>
-    <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
-  </section>
-</main>
+      document.getElementById('item-count').textContent = totalItems;
+      document.getElementById('subtotal').textContent = 'P' + subtotal.toFixed(2);
+      document.getElementById('shipping-cost').textContent = shipping === 0 ? 'FREE' : 'P' + shipping.toFixed(2);
+      document.getElementById('shipping-note').textContent = subtotal >= 500 ? '✓ You qualify for free shipping!' : 'Spend P' + (500 - subtotal).toFixed(2) + ' more for free shipping';
+      document.getElementById('cart-total').textContent = 'P' + total.toFixed(2);
 
-<footer>
-  <p>&copy; 2026 Tee's Cosmetics Corner</p>
-</footer>
+      // Pass total to checkout
+      document.getElementById('checkout-btn').href = 'checkout.html?total=' + total.toFixed(2);
+    }
 
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const product = params.get('product');
-  const price = params.get('price');
+    function changeQty(index, change) {
+      cart[index].qty += change;
+      if (cart[index].qty <= 0) cart.splice(index, 1);
+      localStorage.setItem('tcc-cart', JSON.stringify(cart));
+      renderCart();
+    }
 
-  if (product && price) {
-    document.getElementById('cart-body').innerHTML = `
-      <tr>
-        <td>${product}</td>
-        <td>P${price}.00</td>
-        <td>1</td>
-        <td>P${price}.00</td>
-      </tr>
-    `;
-    document.getElementById('cart-total').textContent = 'P' + price + '.00';
-  } else {
-    document.getElementById('cart-body').innerHTML = `
-      <tr>
-        <td colspan="4">Your cart is empty.</td>
-      </tr>
-    `;
-    document.getElementById('cart-total').textContent = 'P0.00';
-  }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+    function removeItem(index) {
+      cart.splice(index, 1);
+      localStorage.setItem('tcc-cart', JSON.stringify(cart));
+      renderCart();
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    function clearCart() {
+      cart = [];
+      localStorage.setItem('tcc-cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    renderCart();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
-
