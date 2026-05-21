@@ -3,405 +3,482 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Products – Tee's Cosmetics Corner</title>
 </head>
 <body>
 
-<header>
-     
-  <nav class="navbar navbar-expand-lg">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Tee's <span>Cosmetics</span> Corner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    
+    <section class="booking text-center">
+      <h1>Our Collection</h1>
+      <p>Wigs, skincare, makeup accessories — everything you need for a flawless look.</p>
+    </section>
+
+    
+    <div class="container mt-4">
+      <div style="display:flex; justify-content:center; gap:0.5em; flex-wrap:wrap;">
+        <a href="#wigs" class="btn btn-outline">Wigs</a>
+        <a href="#skincare" class="btn btn-outline">Skincare</a>
+        <a href="#accessories" class="btn btn-outline">Accessories</a>
+        <a href="#promo" class="btn btn-outline">Promos</a>
+        <a href="booking.html" class="btn btn-primary">Book Makeup</a>
+      </div>
+    </div>
+
+    
+    <section class="container my-5" id="wigs">
+      <div class="section__header">
+        <h2>Wigs</h2>
+        <div class="section__divider"><span>✦</span></div>
+        <p class="cat-section__sub" style="font-size:0.78em; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); font-weight:500; margin-top:0.5em;">Premium human &amp; synthetic hair</p>
+      </div>
+      <div class="products__grid mt-4">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(13).jpeg" alt="Soraya Wig">
+            <a href="wishlist.html?product=Soraya Wig" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="soraya.html">Soraya</a></p>
+            <p class="product-card__subtitle">Wig</p>
+            <p class="product-card__price">P680.00</p>
+            <a href="cart.html?product=Soraya Wig&price=680" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Soraya Wig&price=680" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(9).jpeg" alt="Aluna Wig">
+            <a href="wishlist.html?product=Aluna Wig" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Aluna.html">Aluna</a></p>
+            <p class="product-card__subtitle">Wig</p>
+            <p class="product-card__price">P1700.00</p>
+            <a href="cart.html?product=Aluna Wig&price=1700" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Aluna Wig&price=1700" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/180%25%20Density%20_%20Water%20Wave%205x5%20Closure%20HD%20Lace%20Glueless%20Free%20Part%20Long%20Wig%20100%25%20Human%20Hair.jpeg" alt="Water Wave Wig">
+            <a href="wishlist.html?product=Water Wave Wig" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Water wave.html">Water Wave</a></p>
+            <p class="product-card__subtitle">Wig</p>
+            <p class="product-card__price">P2300.00</p>
+            <a href="cart.html?product=Water Wave Wig&price=2300" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Water Wave Wig&price=2300" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(15).jpeg" alt="Brown Angel Wig">
+            <a href="wishlist.html?product=Brown Angel Wig" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Brown Angel.html">Brown Angel</a></p>
+            <p class="product-card__subtitle">Wig</p>
+            <p class="product-card__price">P650.00</p>
+            <a href="cart.html?product=Brown Angel Wig&price=650" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Brown Angel Wig&price=650" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
+
+    
+    <section class="container my-5" id="skincare">
+      <div class="section__header">
+        <h2>Skincare</h2>
+        <div class="section__divider"><span>✦</span></div>
+        <p style="font-size:0.78em; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); font-weight:500; margin-top:0.5em;">Glow-up essentials for every skin type</p>
+      </div>
+
+      <h3 class="mt-4">Moisturisers</h3>
+      <div class="products__grid mt-3">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/cerave%20moisturising%20lotion.webp" alt="CeraVe Moisturising Lotion">
+            <a href="wishlist.html?product=CeraVe Moisturising Lotion" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="CeraVe moisturising lotion.html">CeraVe Moisturising Lotion</a></p>
+            <p class="product-card__subtitle">Moisturiser</p>
+            <p class="product-card__price">P129.99</p>
+            <a href="cart.html?product=CeraVe Moisturising Lotion&price=129.99" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=CeraVe Moisturising Lotion&price=129.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Nivea%20Luminous%20anti-aging%20day%20cream.webp" alt="Nivea Luminous Anti-Aging Day Cream">
+            <a href="wishlist.html?product=Nivea Luminous Anti-Aging Day Cream" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Nivea Luminous anti-aging day cream.html">Nivea Luminous Anti-Aging Cream</a></p>
+            <p class="product-card__subtitle">Moisturiser</p>
+            <p class="product-card__price">P237.59</p>
+            <a href="cart.html?product=Nivea Luminous Anti-Aging Day Cream&price=237.59" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Nivea Luminous Anti-Aging Day Cream&price=237.59" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/nivea%20eventone%20moisturiser.webp" alt="Nivea Eventone Moisturiser">
+            <a href="wishlist.html?product=Nivea Eventone Moisturiser" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Nivea eventone moisturiser.html">Nivea Eventone Moisturiser</a></p>
+            <p class="product-card__subtitle">Moisturiser</p>
+            <p class="product-card__price">P129.99</p>
+            <a href="cart.html?product=Nivea Eventone Moisturiser&price=129.99" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Nivea Eventone Moisturiser&price=129.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="mt-5">Serums</h3>
+      <div class="products__grid mt-3">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Garnier%20vitamin%20c%20serum.webp" alt="Garnier Vitamin C Serum">
+            <a href="wishlist.html?product=Garnier Vitamin C Serum" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Garnier Vitamin C serum.html">Garnier Vitamin C Serum</a></p>
+            <p class="product-card__subtitle">Serum</p>
+            <p class="product-card__price">P233.99</p>
+            <a href="cart.html?product=Garnier Vitamin C Serum&price=233.99" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Garnier Vitamin C Serum&price=233.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/vitaminc%2030mlserum%20clean%20New%20Drugstore%20Skincare%20Drops%20Your%20Complexion%20Will%20Thank%20You%20For%20In%202020.jpeg" alt="La Roche-Posay Vitamin C Serum">
+            <a href="wishlist.html?product=La Roche-Posay Vitamin C Serum" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="La Roche-Posay Vitamin C serum.html">La Roche-Posay Vitamin C Serum</a></p>
+            <p class="product-card__subtitle">Serum</p>
+            <p class="product-card__price">P679.70</p>
+            <a href="cart.html?product=La Roche-Posay Vitamin C Serum&price=679.70" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=La Roche-Posay Vitamin C Serum&price=679.70" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/LUMINOUS%20GLOW%20SERUM.webp" alt="Nivea Luminous630 Skin Glow Serum">
+            <a href="wishlist.html?product=Nivea Luminous630 Skin Glow Serum" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Nivea Luminous630 Skin Glow Serum 30ml.html">Nivea Luminous630 Skin Glow Serum</a></p>
+            <p class="product-card__subtitle">Serum</p>
+            <p class="product-card__price">P169.20</p>
+            <a href="cart.html?product=Nivea Luminous630 Skin Glow Serum&price=169.20" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Nivea Luminous630 Skin Glow Serum&price=169.20" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="mt-5">Sunscreen</h3>
+      <div class="products__grid mt-3">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/CeraVe%20sunscreen.webp" alt="CeraVe Sunscreen SPF50">
+            <a href="wishlist.html?product=CeraVe Sunscreen SPF50" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="CeraVe Sunscreen SPF50.html">CeraVe Sunscreen SPF50</a></p>
+            <p class="product-card__subtitle">Sunscreen</p>
+            <p class="product-card__price">P279.99</p>
+            <a href="cart.html?product=CeraVe Sunscreen SPF50&price=279.99" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=CeraVe Sunscreen SPF50&price=279.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Nivea%20sun%20SPF%2050.webp" alt="Nivea Sunscreen SPF50">
+            <a href="wishlist.html?product=Nivea Sunscreen SPF50" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Nivea Sunscreen SPF50.html">Nivea Sunscreen SPF50</a></p>
+            <p class="product-card__subtitle">Sunscreen</p>
+            <p class="product-card__price">P179.99</p>
+            <a href="cart.html?product=Nivea Sunscreen SPF50&price=179.99" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Nivea Sunscreen SPF50&price=179.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Derm%20Opal.webp" alt="Derm Opal Sunscreen SPF50">
+            <a href="wishlist.html?product=Derm Opal Sunscreen SPF50" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Derm Opal.html">Derm Opal Sunscreen SPF50</a></p>
+            <p class="product-card__subtitle">Sunscreen</p>
+            <p class="product-card__price">P237.59</p>
+            <a href="cart.html?product=Derm Opal Sunscreen SPF50&price=237.59" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Derm Opal Sunscreen SPF50&price=237.59" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="mt-5">Cleansers</h3>
+      <div class="products__grid mt-3">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/cerave%20hydrating%20cleanser.webp" alt="CeraVe Hydrating Cleanser">
+            <a href="wishlist.html?product=CeraVe Hydrating Cleanser" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="CeraVe Hydrating Cleanser.html">CeraVe Hydrating Cleanser</a></p>
+            <p class="product-card__subtitle">Cleanser</p>
+            <p class="product-card__price">P229.59</p>
+            <a href="cart.html?product=CeraVe Hydrating Cleanser&price=229.59" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=CeraVe Hydrating Cleanser&price=229.59" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Nivea%20Gentle%20Cleansing%20Creme%20Wash%20150ml.webp" alt="Nivea Gentle Cleansing Cream Wash">
+            <a href="wishlist.html?product=Nivea Gentle Cleansing Cream Wash" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Nivea Gentle Cleansing Cream Wash 150ml.html">Nivea Gentle Cleansing Cream Wash</a></p>
+            <p class="product-card__subtitle">Cleanser</p>
+            <p class="product-card__price">P62.50</p>
+            <a href="cart.html?product=Nivea Gentle Cleansing Cream Wash&price=62.50" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Nivea Gentle Cleansing Cream Wash&price=62.50" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="mt-5" id="promo"> Promo</h3>
+      <div class="products__grid mt-3">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/10%20Holy-Grail%20Skincare%20Products%20to%20Enhance%20Your%20Routine%202024.jpeg" alt="Holy-Grail Skincare Hamper">
+            <span class="product-card__badge">PROMO</span>
+            <a href="wishlist.html?product=Holy-Grail Skincare Hamper" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Holy-Grail skincare Hamper.html">Holy-Grail Skincare Hamper</a></p>
+            <p class="product-card__subtitle">Skincare Bundle</p>
+            <p class="product-card__price">P1800.00</p>
+            <a href="cart.html?product=Holy-Grail Skincare Hamper&price=1800" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Holy-Grail Skincare Hamper&price=1800" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tip-box mt-4" style="background:var(--cream-dark); border-left:3px solid var(--gold); border-radius:0 8px 8px 0; padding:1.2em 1.5em;">
+        <p> Need help choosing the right skincare for your skin type? Visit our <a href="contact.html">Contact page</a> and our team will assist you personally.</p>
+      </div>
+
+    </section>
+
+    <hr>
+
+    
+    <section class="container my-5" id="accessories">
+      <div class="section__header">
+        <h2>Accessories</h2>
+        <div class="section__divider"><span>✦</span></div>
+        <p style="font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); font-weight:500; margin-top:0.5em;">Everything you need in your glam kit</p>
+      </div>
+      <div class="products__grid mt-4">
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/12%20Pcs%20WIG%20INSTALLATION%20KIT%20FOR%20BEGINNERS.jpeg" alt="Wig Installation Kit">
+            <a href="wishlist.html?product=Wig Installation Kit" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Wig Installation Kit.html">Wig Installation Kit</a></p>
+            <p class="product-card__subtitle">Accessory</p>
+            <p class="product-card__price">P1340.00</p>
+            <a href="cart.html?product=Wig Installation Kit&price=1340" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Wig Installation Kit&price=1340" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Wig%20Pieces%20Caps%20Caps%20Stretchy%20Wig%20Stocking%20Accessories%20Nylon%20For%20Women%202%20Wig.jpeg" alt="Wig Cap x2">
+            <a href="wishlist.html?product=Wig Cap x2" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Wig Caps x2.html">Wig Cap x2</a></p>
+            <p class="product-card__subtitle">Accessory</p>
+            <p class="product-card__price">P40.00</p>
+            <a href="cart.html?product=Wig Cap x2&price=40" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Wig Cap x2&price=40" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Morphe%20Rose%20Gold%20Brushes.jpeg" alt="Morphe Rose Gold Brushes">
+            <a href="wishlist.html?product=Morphe Rose Gold Brushes" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Morphe Rose Gold Brushes.html">Morphe Rose Gold Brushes</a></p>
+            <p class="product-card__subtitle">Accessory</p>
+            <p class="product-card__price">P340.00</p>
+            <a href="cart.html?product=Morphe Rose Gold Brushes&price=340" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Morphe Rose Gold Brushes&price=340" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/beauty%20blenders.webp" alt="Beauty Blenders x4">
+            <a href="wishlist.html?product=Beauty Blenders x4" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Beauty Blenders.html">Beauty Blenders x4</a></p>
+            <p class="product-card__subtitle">Accessory</p>
+            <p class="product-card__price">P75.00</p>
+            <a href="cart.html?product=Beauty Blenders x4&price=75" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Beauty Blenders x4&price=75" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(14).jpeg" alt="Black Makeup Case">
+            <a href="wishlist.html?product=Black Makeup Case" class="product-card__wishlist">♡</a>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__name"><a href="Black makeup case organiser.html">Black Makeup Case</a></p>
+            <p class="product-card__subtitle">Accessory</p>
+            <p class="product-card__price">P900.00</p>
+            <a href="cart.html?product=Black Makeup Case&price=900" class="product-card__add">Add to Cart</a>
+            <a href="checkout.html?product=Black Makeup Case&price=900" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4em;">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="booking text-center">
+      <h2>Get Your Glam Done Professionally</h2>
+      <p>Book a professional makeup session with our expert artists.</p>
+      <a href="booking.html" class="btn btn-primary mt-2">Book a Session</a>
+    </section>
+
+  </main>
+
+  <footer>
     <div class="container">
-      <a class="navbar-brand" href="index.html">Tee's <span>Cosmetics</span> Corner</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-          <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
-          <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
-          <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-        </ul>
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__brand">Tee's <span>Cosmetics</span> Corner</h3>
+          <p>Your one-stop shop for wigs, skincare, makeup and beauty accessories. Glamour delivered.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="booking.html">Book a Session</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+       <p>Follow us:</p>
+
+  <a href="https://facebook.com" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a href="https://instagram.com" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://twitter.com" target="_blank">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <a href="https://tiktok.com" target="_blank">
+    <i class="fab fa-tiktok"></i>
+  </a>
+      <div class="footer__bottom">
+        &copy; 2026 Tee's Cosmetics Corner. All rights reserved.
       </div>
     </div>
-  </nav>
+  </footer>
 
-</header>
-
-<main>
-
-
-  <section>
-    <h2>Wigs</h2>
-    <div class="products__grid">
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(13).jpeg" alt="Soraya Wig">
-          <a href="wishlist.html?product=Soraya Wig" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="soraya.html">Soraya</a></p>
-          <p class="product-card__subtitle">Wig</p>
-          <p class="product-card__price">P680.00</p>
-          <a href="cart.html?product=Soraya Wig&price=680" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Soraya Wig&price=680" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(9).jpeg" alt="Aluna Wig">
-          <a href="wishlist.html?product=Aluna Wig" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Aluna.html">Aluna</a></p>
-          <p class="product-card__subtitle">Wig</p>
-          <p class="product-card__price">P1700.00</p>
-          <a href="cart.html?product=Aluna Wig&price=1700.00" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Aluna Wig&price=1700" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/180%25%20Density%20_%20Water%20Wave%205x5%20Closure%20HD%20Lace%20Glueless%20Free%20Part%20Long%20Wig%20100%25%20Human%20Hair.jpeg" alt="Water Wave Wig">
-          <a href="wishlist.html"product=Water Wave Wig" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Water wave.html">Water Wave</a></p>
-          <p class="product-card__subtitle">Wig</p>
-          <p class="product-card__price">P2300.00</p>
-          <a href="cart.html?product=Water Wave Wig&price=2300" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Water Wave Wig&price=2300" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(15).jpeg" alt="Brown Angel Wig">
-          <a href="wishlist.html?product=Brown Angel Wig" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Brown Angel.html">Brown Angel</a></p>
-          <p class="product-card__subtitle">Wig</p>
-          <p class="product-card__price">P650.00</p>
-          <a href="cart.html?product=Brown Angel Wig&price=650" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Brown Angel Wig&price=650" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <hr>
-  <section>
-    <h2>Skincare</h2>
-
-    <h3>Moisturisers</h3>
-    <div class="products__grid">
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/cerave%20moisturising%20lotion.webp" alt="CeraVe Moisturising Lotion">
-          <a href="wishlist.html?product=CeraVe Moisturising Lotion" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="CeraVe moisturising lotion.html">CeraVe Moisturising Lotion</a></p>
-          <p class="product-card__subtitle">Moisturiser</p>
-          <p class="product-card__price">129.99</p>
-          <a href="cart.html?product=CeraVe Moisturising Lotion&price=129.99" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=CeraVe Moisturising Lotion&price=129.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Nivea%20Luminous%20anti-aging%20day%20cream.webp" alt="Nivea Luminous Anti-Aging Day Cream">
-          <a href="wishlist.html?product=Nivea Luminous Anti-Aging Day Cream" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Nivea Luminous anti-aging day cream.html">Nivea Luminous Anti-Aging Cream</a></p>
-          <p class="product-card__subtitle">Moisturiser</p>
-          <p class="product-card__price">237.59</p>
-          <a href="cart.html?product=Nivea Luminous Anti-Aging Day Cream&price=237.59" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Nivea Luminous Anti-Aging Day Cream&price=237.59" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/nivea%20eventone%20moisturiser.webp" alt="Nivea Eventone Moisturiser">
-          <a href="wishlist.html?product=Nivea Eventone Moisturiser" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Nivea eventone moisturiser.html">Nivea Eventone Moisturiser</a></p>
-          <p class="product-card__subtitle">Moisturiser</p>
-          <p class="product-card__price">129.99</p>
-          <a href="cart.html?product=Nivea Eventone Moisturiser&price=129.99" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Nivea Eventone Moisturiser&price=129.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-    </div>
-
-    <hr>
-    
-    <h3>Serums</h3>
-    <div class="products__grid">
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Garnier%20vitamin%20c%20serum.webp" alt="Garnier Vitamin C Serum">
-          <a href="wishlist.html?product=Garnier Vitamin C Serum" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Garnier Vitamin C serum.html">Garnier Vitamin C Serum</a></p>
-          <p class="product-card__subtitle">Serum</p>
-          <p class="product-card__price">P233.99</p>
-          <a href="cart.html?product=Garnier Vitamin C Serum&price=233.99" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Garnier Vitamin C Serum&price=233.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/vitaminc%2030mlserum%20clean%20New%20Drugstore%20Skincare%20Drops%20Your%20Complexion%20Will%20Thank%20You%20For%20In%202020.jpeg" alt="La Roche-Posay Vitamin C serum" alt="La Roche-Posay Vitamin C Serum">
-          <a href="wishlist.html?product=La Roche-Posay Vitamin C Serum" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="La Roche-Posay Vitamin C serum.html">La Roche-Posay Vitamin C Serum</a></p>
-          <p class="product-card__subtitle">Serum</p>
-          <p class="product-card__price">679.70</p>
-          <a href="cart.html?product=La Roche-Posay Vitamin C Serum&price=679.70" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=La Roche-Posay Vitamin C Serum&price=679.70" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/LUMINOUS%20GLOW%20SERUM.webp" alt="Nivea Luminous630 Skin Glow Serum">
-          <a href="wishlist.html?product=Nivea Luminous630 Skin Glow Serum" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Nivea Luminous630 Skin Glow Serum 30ml.html">Nivea Luminous630 Skin Glow Serum</a></p>
-          <p class="product-card__subtitle">Serum</p>
-          <p class="product-card__price">169.20</p>
-          <a href="cart.html?product=Nivea Luminous630 Skin Glow Serum&price=169.20" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Nivea Luminous630 Skin Glow Serum&price=169.20" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-    </div>
-
-    <hr>
-    
-    <h3>Sunscreen</h3>
-    <div class="products__grid">
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/CeraVe%20sunscreen.webp" alt="CeraVe Sunscreen SPF50">
-          <a href="wishlist.html?product=CeraVe Sunscreen SPF50" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="CeraVe Sunscreen SPF50.html">CeraVe Sunscreen SPF50</a></p>
-          <p class="product-card__subtitle">Sunscreen</p>
-          <p class="product-card__price">P279.99</p>
-          <a href="cart.html?product=CeraVe Sunscreen SPF50&price=279.99" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=CeraVe Sunscreen SPF50&price=279.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Nivea%20sun%20SPF%2050.webp" alt="Nivea Sunscreen SPF50">
-          <a href="wishlist.html?product=Nivea Sunscreen SPF50" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Nivea Sunscreen SPF50.html">Nivea Sunscreen SPF50</a></p>
-          <p class="product-card__subtitle">Sunscreen</p>
-          <p class="product-card__price">P179.99</p>
-          <a href="cart.html?product=Nivea Sunscreen SPF50&price=179.99" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Nivea Sunscreen SPF50&price=179.99" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Derm%20Opal.webp" alt="Derm Opal Sunscreen SPF50">
-          <a href="wishlist.html?product=Derm Opal Sunscreen SPF50" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Derm Opal.html">Derm Opal Sunscreen SPF50</a></p>
-          <p class="product-card__subtitle">Sunscreen</p>
-          <p class="product-card__price">P237.59</p>
-          <a href="cart.html?product=Derm Opal Sunscreen SPF50&price=237.59" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Derm Opal Sunscreen SPF50&price=237.59" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-    </div>
-
-    <hr>
-    
-    <h3>Cleansers</h3>
-    <div class="products__grid">
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/cerave%20hydrating%20cleanser.webp" alt="CeraVe Hydrating Cleanser">
-          <a href="wishlist.html?product=CeraVe Hydrating Cleanser" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="CeraVe Hydrating Cleanser.html">CeraVe Hydrating Cleanser</a></p>
-          <p class="product-card__subtitle">Cleanser</p>
-          <p class="product-card__price">P229.59</p>
-          <a href="cart.html?product=CeraVe Hydrating Cleanser&price=229.59" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=CeraVe Hydrating Cleanser&price=229.59" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Nivea%20Gentle%20Cleansing%20Creme%20Wash%20150ml.webp" alt="Nivea Gentle Cleansing Cream Wash">
-          <a href="wishlist.html?product=Nivea Gentle Cleansing Cream Wash" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Nivea Gentle Cleansing Cream Wash 150ml.html">Nivea Gentle Cleansing Cream Wash</a></p>
-          <p class="product-card__subtitle">Cleanser</p>
-          <p class="product-card__price">P62.50</p>
-          <a href="cart.html?product=Nivea Gentle Cleansing Cream Wash&price=62.50" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Nivea Gentle Cleansing Cream Wash&price=62.50" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-    </div>
-<hr>
-    
-    <h3>Promo</h3>
-    <div class="products__grid">
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/10%20Holy-Grail%20Skincare%20Products%20to%20Enhance%20Your%20Routine%202024.jpeg" alt="Holy-Grail Skincare Hamper">
-          <span class="product-card__badge">PROMO</span>
-          <a href="wishlist.html?product=Holy-Grail Skincare Hamper" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Holy-Grail skincare Hamper.html"> Holy-Grail Skincare Hamper</a></p>
-          <p class="product-card__subtitle">Skincare Bundle</p>
-          <p class="product-card__price">P1800.00</p>
-          <a href="cart.html?product=Holy-Grail Skincare Hamper&price=1800" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Holy-Grail Skincare Hamper&price=1800" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-    </div>
-
-    <p>Need help choosing the right skincare? Visit our <a href="contact.html">Contact page</a> and our team will assist you. Know your skin type for the best results!</p>
-
-  </section>
-
-  <section>
-    <h2>Accessories</h2>
-    <div class="products__grid">
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/12%20Pcs%20WIG%20INSTALLATION%20KIT%20FOR%20BEGINNERS.jpeg" alt="Wig Installation Kit">
-          <a href="wishlist.html?product=Wig Installation Kit" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Wig Installation Kit.html">Wig Installation Kit</a></p>
-          <p class="product-card__subtitle">Accessory</p>
-          <p class="product-card__price">P1340.00</p>
-          <a href="cart.html?product=Wig Installation Kit&price=1340" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Wig Installation Kit&price=1340" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Wig%20Pieces%20Caps%20Caps%20Stretchy%20Wig%20Stocking%20Accessories%20Nylon%20For%20Women%202%20Wig.jpeg" alt="Wig Cap x2">
-          <a href="wishlist.html?product=Wig Cap x2" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Wig Caps x2.html">Wig Cap x2</a></p>
-          <p class="product-card__subtitle">Accessory</p>
-          <p class="product-card__price">P40.00</p>
-          <a href="cart.html?product=Wig Cap x2&price=40" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Wig Cap x2&price=40" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/Morphe%20Rose%20Gold%20Brushes.jpeg" alt="Morphe Rose Gold Brushes">
-          <a href="wishlist.html?product=Morphe Rose Gold Brushes" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Morphe Rose Gold Brushes.html">Morphe Rose Gold Brushes</a></p>
-          <p class="product-card__subtitle">Accessory</p>
-          <p class="product-card__price">P340.00</p>
-          <a href="cart.html?product=Morphe Rose Gold Brushes&price=340" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Morphe Rose Gold Brushes&price=340" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/beauty%20blenders.webp" alt="Beauty blenders x4" alt="Beauty Blenders x4">
-          <a href="wishlist.html?product=Beauty Blenders x4" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Beauty Blenders.html">Beauty Blenders x4</a></p>
-          <p class="product-card__subtitle">Accessory</p>
-          <p class="product-card__price">P75.00</p>
-          <a href="cart.html?product=Beauty Blenders x4&price=75" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Beauty Blenders x4&price=75" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="https://raw.githubusercontent.com/Thabile-Mosala/Thabile31-bida25-323-WMD-assignment/main/image/download%20(14).jpeg" alt="Black Makeup Case">
-          <a href="wishlist.html?product=Black Makeup Case" class="product-card__wishlist">♡</a>
-        </div>
-        <div class="product-card__body">
-          <p class="product-card__name"><a href="Black makeup case organiser.html">Black Makeup Case</a></p>
-          <p class="product-card__subtitle">Accessory</p>
-          <p class="product-card__price">P900.00</p>
-          <a href="cart.html?product=Black Makeup Case&price=900" class="product-card__add">Add to Cart</a>
-          <a href="checkout.html?product=Black Makeup Case&price=900" class="btn btn-outline" style="display:block;text-align:center;margin-top:0.4rem;">Buy Now</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="booking">
-    <h2>Get Your Glam Done Professionally</h2>
-    <p>Book a professional makeup session with our expert artists.</p>
-    <a href="booking.html" class="btn btn-primary">Book a Session</a>
-  </section>
-
-</main>
-
-<footer>
-  <p>&copy; 2026 Tee's Cosmetics Corner</p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
