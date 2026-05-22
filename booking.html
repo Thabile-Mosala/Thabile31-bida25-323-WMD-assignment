@@ -44,7 +44,15 @@
       <p>Fill in the form below and we will contact you to confirm your booking.</p>
     </section>
 
-
+<div id="notif" style="display:none; max-width:780px; margin:2em auto; padding:0 1rem;">
+  <div style="background:#f0fbf4; border:1px solid #6dbb8a; border-left:4px solid #3a9e62; border-radius:6px; padding:1.2em 1.5em; display:flex; align-items:flex-start; gap:14px;">
+    <div style="font-size:1.6em; line-height:1;">✅</div>
+    <div>
+      <strong style="color:#1e6640; font-size:1em;">Appointment Booked!</strong>
+      <p style="color:#2d7a50; margin:4px 0 0; font-size:0.88em;">Your appointment has been booked successfully. We will contact you shortly to confirm.</p>
+    </div>
+  </div>
+</div>
     <section class="container my-5">
       <div class="row justify-content-center">
         <div class="col-md-7">
@@ -52,7 +60,7 @@
 
             <h2 class="mb-4">Appointment Details</h2>
 
-            <form action="#" method="post">
+        <form onsubmit="handleBooking(event)">
 
               <div class="mb-3">
                 <label class="form-label">Full Name:</label>
@@ -204,6 +212,18 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script>
+  if (new URLSearchParams(window.location.search).get('msg') === 'booked') {
+    document.getElementById('notif').style.display = 'block';
+    document.getElementById('notif').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  function handleBooking(event) {
+    event.preventDefault();
+    window.location.href = 'booking.html?msg=booked';
+  }
+</script>
 </body>
 </html>
     
