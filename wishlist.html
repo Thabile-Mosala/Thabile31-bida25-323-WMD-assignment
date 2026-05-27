@@ -127,12 +127,12 @@
     const product = params.get('product');
 
     if (product) {
-      // Show success message
+    
       const msg = document.getElementById('wishlist-message');
       msg.textContent = '♡ ' + product + ' has been added to your wishlist!';
       msg.style.cssText = 'color:green; background:#f0fff0; border:1px solid green; padding:1rem; border-radius:6px;';
 
-      // Hide empty state, show item
+      
       document.getElementById('empty-wishlist').style.display = 'none';
       document.getElementById('wishlist-items').style.display = 'grid';
       document.getElementById('wishlist-actions').style.display = 'block';
